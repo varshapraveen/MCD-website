@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>McDonald's</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+<img src="mcd.jpg" alt="McDonald's Logo" id="logo">
+<div id="headerText">
+<h1>McDONALD'S</h1>
+<h2>I'm Lovin' It</h2>
+</div>
+</header>
+<div id="mealSection">
+<h3>Welcome! Please Choose Your Meal</h3>
+</div>
+<div class="container">
+<div class="aisles">
+<div class="aisle" id="aisle1">
+<h3>FOOD</h3>
+<div class="item" draggable="true" id="mcveggie" data-price="50">
+<img src="mcveggie.jpg" alt="McVeggie">
+<p>McVeggie Burger - ₹50.00</p>
+</div>
+<div class="item" draggable="true" id="mcchicken" data-price="80">
+<img src="mcchicken.jpg" alt="McChicken">
+<p>McChicken Burger - ₹80.00</p>
+</div>
+<div class="item" draggable="true" id="nuggets" data-price="90">
+<img src="nuggets.jpg" alt="Chicken Nuggets">
+<p>Chicken Nuggets - ₹90.00</p>
+</div>
+<div class="item" draggable="true" id="fries" data-price="70">
+<img src="fries.jpg" alt="French Fries">
+<p>French Fries - ₹70.00</p>
+</div>
+<div class="item" draggable="true" id="mcspicy" data-price="100">
+<img src="maharaja.jpg" alt="McSpicy">
+<p>MahaRaja Mac - ₹100.00</p>
+</div>
+<div class="item" draggable="true" id="wrap" data-price="120">
+<img src="wrap.jpg" alt="Chicken Wrap">
+<p>Chicken Wrap - ₹120.00</p>
+</div>
+</div>
+<div class="aisle" id="aisle2">
+<h3>BEVERAGES</h3>
+<div class="item" draggable="true" id="cola" data-price="30">
+<img src="cola.jpg" alt="Coca Cola">
+<p>Coca Cola - ₹30.00</p>
+</div>
+<div class="item" draggable="true" id="smoothie" data-price="85">
+<img src="smoothie.jpg" alt="Blueberry Smoothie">
+<p>Blueberry Smoothie - ₹85.00</p>
+</div>
+<div class="item" draggable="true" id="softie" data-price="20">
+<img src="softie.jpg" alt="Softie">
+<p>Softie - ₹20.00</p>
+</div>
+<div class="item" draggable="true" id="coffee" data-price="80">
+<img src="coffee.jpg" alt="McCoffee">
+<p>McCoffee - ₹80.00</p>
+</div>
+</div>
+</div>
+<div class="shopping-cart" id="shoppingCart">
+<h2>Your Cart</h2>
+<div id="cart"></div>
+<p id="totalCost">Total Cost: ₹ 0.00</p>
+<button onclick="proceedToBilling()">Proceed to Billing</button>
+</div>
+</div>
+<div id="billingModal" class="modal">
+<div class="modal-content">
+<span class="close-button" onclick="closeModal()">&times;</span>
+<h2>Billing Summary</h2>
+<p id="modalContent">Total cost: ₹ 0.00</p>
+<button onclick="resetCart()">Reset Cart</button>
+</div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,191 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f7e7d3; /* Light background for contrast */
+    padding: 20px;
+    color: #333; /* Dark text color for readability */
+    }
+    header {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Align logo and text to the left */
+    margin-bottom: 20px;
+    position: relative;
+    }
+    #logo {
+    width: 150px; /* Adjust size as needed */
+    height: auto;
+    margin-right: 20px; /* Space between logo and text */
+    position: relative;
+    left: -10px; /* Move logo slightly to the left */
+    }
+    #headerText {
+    text-align: left; /* Align text to the left */
+    margin-top: 30px; /* Space from the top */
+    position: relative;
+    left: -10px; /* Move text slightly to the left */
+    }
+    h1 {
+    color: #e7ca3a; /* McDonald's yellow */
+    font-size: 3em;
+    margin: 0;
+    }
+    h2 {
+    color: #ff6600; /* McDonald's red */
+    font-size: 1.5em;
+    margin: 0;
+    }
+    #mealSection {
+    text-align: center;
+    margin-top: 20px;
+    }
+    #mealSection h3 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida 
+    Sans', Arial, sans-serif; /* Different font style */
+    font-size: 1.5em;
+    color: #910a0a; /* Dark text color for better contrast */
+    }
+    .container {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff; /* White background for container */
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    }
+    .aisles {
+    width: 70%;
+    background-color: #fff; /* White background for aisles */
+    padding: 10px;
+    border-radius: 10px; /* Rounded corners */
+    }
+    .aisle {
+    margin-bottom: 20px;
+    }
+    .aisle h3 {
+    font-family: 'Roboto', sans-serif; /* Poppy font for headings */
+    font-size: 2em; /* Larger font size */
+    color: #ff6600; /* McDonald's red */
+    margin-bottom: 10px;
+    }
+    .item {
+    border: 1px solid #ddd;
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Increased padding for more space */
+    margin: 10px;
+    cursor: pointer;
+    display: flex; /* Flexbox to align items horizontally */
+    align-items: center;
+    background-color: #f9f9f9; /* Slightly darker background for items */
+    transition: background-color 0.3s ease; /* Smooth color transition */
+    width: 100%; /* Full width of the container */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+    }
+    .item img {
+    width: 120px; /* Increased image width */
+    height: auto; /* Maintain aspect ratio */
+    margin-right: 20px; /* Space between image and text */
+    }
+    .item p {
+    margin: 0;
+    font-size: 1.2em; /* Larger text for better readability */
+    flex: 1; /* Take up available space */
+    }
+    .item:hover {
+    background-color: #ffecb3; /* Light yellow on hover */
+    }
+    .shopping-cart {
+    position: fixed;
+    top: 10%;
+    right: 30px; /* Push cart slightly to the right */
+    width: 350px; /* Increased width for better layout */
+    background-color: #ffcc00; /* McDonald's yellow */
+    border: 2px dashed #bbb;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    }
+    #cart {
+    min-height: 200px;
+    max-height: 1000px;
+    overflow-y: auto;
+    }
+    #cart .item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 0;
+    border-bottom: 1px solid #ddd; /* Border between items */
+    margin-bottom: 10px; /* Space between items */
+    }
+    .quantity {
+    display: inline-block;
+    width: 40px;
+    text-align: center;
+    font-weight: bold;
+    margin-left: 10px; /* Space between item description and quantity */
+    }
+    .remove-btn {
+    background-color: #ff4d4d; /* Red background for remove button */
+    border: none;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-left: 10px; /* Space between quantity and button */
+    }
+    .remove-btn:hover {
+    background-color: #cc0000; /* Darker red on hover */
+    }
+    button {
+    background-color: #ff6600; /* McDonald's red */
+    border: none;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease; /* Smooth color transition */
+    }
+    button:hover {
+    background-color: #cc5200; /* Darker red on hover */
+    }
+    #totalCost {
+    font-weight: bold;
+    margin-bottom: 10px;
+    }
+    .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.4);
+    padding-top: 60px;
+    }
+    .modal-content {
+    background-color: #fff;
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Shadow for depth */
+    }
+    .close-button {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    }
+    .close-button:hover,
+    .close-button:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+    }
+    
